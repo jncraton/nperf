@@ -12,5 +12,8 @@ dist: $(src)
 upload: dist
 	python3 -m twine upload dist/*
 
+install: dist
+	pip3 install dist/*.whl
+
 clean:
 	rm -rf nperf/__pycache__ build dist nperf.egg-info
