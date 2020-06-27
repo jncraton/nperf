@@ -34,7 +34,7 @@ def get_down_speed(timeout=.5):
 
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.connect(('speedtest.wdc01.softlayer.com', 80))
-        s.sendall(b'GET /downloads/test1000.zip HTTP/1.1\r\nHost:speedtest.wdc01.softlayer.com\r\n\r\n')
+        s.sendall(b'GET /downloads/test100.zip HTTP/1.1\r\nHost:speedtest.wdc01.softlayer.com\r\n\r\n')
         start = time.time()
         while time.time() < start + timeout:
             data = s.recv(1024 * 16)
