@@ -4,7 +4,7 @@ with open("readme.md", "r") as fh:
     long_description = fh.read()
 
 setup(name='nperf',
-      version='0.0.1',
+      version='1.0.0',
       description="Python network performance tools",
       long_description=long_description,
       long_description_content_type="text/markdown",
