@@ -10,7 +10,7 @@ setup(name='nperf',
       long_description_content_type="text/markdown",
       url='https://github.com/jncraton/nperf',
       author='Jon Craton',
-      author_email='jncraton@gmail.com',
+      author_email='jon@joncraton.com',
       packages=find_packages(exclude=['contrib', 'docs', 'tests', 'bin']),
       classifiers=[
         'Development Status :: 4 - Beta',
