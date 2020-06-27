@@ -12,6 +12,11 @@ setup(name='nperf',
       author='Jon Craton',
       author_email='jon@joncraton.com',
       packages=find_packages(exclude=['contrib', 'docs', 'tests', 'bin']),
+      entry_points={
+              'console_scripts': [
+                  'nperf=nperf.__main__:main',
+              ],
+          },
       classifiers=[
         'Development Status :: 4 - Beta',
         'Programming Language :: Python :: 3',
