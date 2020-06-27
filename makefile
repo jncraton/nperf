@@ -9,4 +9,4 @@ upload:
 	python3 -m twine upload dist/*
 
 clean:
-	rm -rf nperf/__pycache__
+	rm -rf nperf/__pycache__ build dist nperf.egg-info
