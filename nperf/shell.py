@@ -11,7 +11,7 @@ def get_default_gateway():
     output = check_output(['ip','route','show']).decode('utf8')
     return re.search('default via ([\d\.]+)', output).group(1)
 
-def check_ping(host, timeout=1):
+def check_ping(host='8.8.8.8', timeout=1):
     """ Checks the ICMP roundtrip ping time to a hosts
 
     Returns ping time in milliseconds
@@ -22,7 +22,13 @@ def check_ping(host, timeout=1):
     >>> check_ping("1.1.1.1") > 0
     True
 
+    >>> check_ping() > 0
+    True
+
     >>> check_ping("1.1.1.1") < 100
+    True
+
+    >>> check_ping() < 100
     True
     """
 
